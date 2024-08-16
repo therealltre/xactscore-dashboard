@@ -82,7 +82,7 @@ const Profile = () => {
 
         <Box mt={1} py={1} px={2}>
           <Button
-            href="/authentication/login"
+            href="/"
             variant="outlined"
             sx={{ color: "#ff0000" }}
             component={Link}
