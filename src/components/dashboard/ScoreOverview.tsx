@@ -10,9 +10,7 @@ import {
 import { useRouter } from "next/router";
 import PaymentHistoryPage from "../scoreoverviewdetails/PaymentHistoryPage";
 import CreditUsagePage from "../scoreoverviewdetails/CreditUsagePage";
-import AccountMixPage from "../scoreoverviewdetails/AccountMixPage";
-import AccountAgePage from "../scoreoverviewdetails/AccountAgePage";
-import InquiriesPage from "../scoreoverviewdetails/InquiriesPage";
+
 
 interface DashboardComponentProps {
   header: string;
@@ -160,63 +158,9 @@ const ScoreOverview: React.FC = () => {
             />
           </Card>
         </Grid>
-        <Grid item xs={2} sm={4}>
-          <Card
-            sx={{
-              width: 370, // Set your desired fixed width here
-              height: 150,
-              padding: 0
-            }}
-            elevation={9}
-            variant={undefined}
-          >
-            <DashboardComponent
-              header="Account Mix"
-              label="3 Accounts"
-              labelColor="green" // Specify color for the third label
-              text="You have a good mix of revolving accounts and installments loans.."
-              overlayContent={<AccountMixPage />}
-            />
-          </Card>
-        </Grid>
-        <Grid item xs={2} sm={4}>
-          <Card
-            sx={{
-              width: 370, // Set your desired fixed width here
-              height: 150,
-              padding: 0
-            }}
-            elevation={9}
-            variant={undefined}
-          >
-            <DashboardComponent
-              header="Account Age"
-              label="2 years 11 Months"
-              labelColor="green" // Specify color for the third label
-              text="You have built credit history over a long period of time. This is good for your score"
-              overlayContent={<AccountAgePage />}
-            />
-          </Card>
-        </Grid>
-        <Grid item xs={2} sm={4}>
-          <Card
-            sx={{
-              width: 370, // Set your desired fixed width here
-              height: 150,
-              padding: 0
-            }}
-            elevation={9}
-            variant={undefined}
-          >
-            <DashboardComponent
-              header="Inquiries"
-              label="3 inquiries"
-              labelColor="red" // Specify color for the third label
-              text="There are no new inquiries or accounts on your credit report which is why you have a good grade."
-              overlayContent={<InquiriesPage />}
-            />
-          </Card>
-        </Grid>
+  
+   
+    
       </Grid>
     </Box>
   );
